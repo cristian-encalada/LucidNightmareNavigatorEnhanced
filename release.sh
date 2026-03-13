@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ADDON="LucidNightmareNavigator"
+ADDON="LucidNightmareNavigatorEnhanced"
 TOC="${ADDON}.toc"
 
 ZIP="${ADDON}.zip"

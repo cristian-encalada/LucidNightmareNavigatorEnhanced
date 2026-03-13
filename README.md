@@ -1,20 +1,40 @@
-# LucidNightmareNavigator
-Addon that keeps track of the wacky maze ("The Endless Halls") required for the Lucid Nightmare mount.
+# Lucid Nightmare Navigator Enhanced
 
-https://www.wowhead.com/guides/lucid-nightmare-secret-mount#seventh-note-endless-halls
+A World of Warcraft addon that helps you navigate the **Endless Halls** maze required to obtain the [Lucid Nightmare](https://www.wowhead.com/guides/lucid-nightmare-secret-mount#seventh-note-endless-halls) secret mount.
 
-EDIT: See https://github.com/Debuggernaut/LucidNightmareNavigator/issues/3#issuecomment-757395533 for some debugging steps to 
-try if the addon isn't working, or feel free to open a new issue (I might not have time to reply quickly though)
+## Features
 
-This addon automatically draws out a pretty useless map as you're running around, but it also keeps track of everywhere you run,
-and it can give you turn-by-turn navigation directions back to a point of interest or the nearest unexplored territory.  Just hit
-the "wall" buttons at the top of the addon to mark which cardinal directions are impassible, and let the addon guide you to glory!
+- **8×8 grid map** — live visual overview of your explored rooms, updated automatically as you discover runes and orbs
+- **Turn-by-turn navigation** — guides you to the nearest unexplored territory, any marked rune or orb, or the teleport trap room
+- **Wall marking** — click the cardinal direction buttons at the top to mark blocked corridors in each room
+- **Teleport trap handling** — marks the trap room on the map, navigation avoids it, and a dedicated button lets you route back to it
+- **Map persistence** — your progress is saved across sessions and reloaded automatically on login
+- **Map export / import** — serialize your map to a text box for backup or sharing
 
-There's also a way to export your map in-progress to a text box in the bottom left corner (and import it from the text box).  I'd 
-recommend periodically doing this in case the map gets fouled up, but it's not a huge deal.
+## How to Use
 
-Warning: This addon doesn't gracefully handle the "teleport trap" square.  If you use the addon to try and map out the whole maze
-before grabbing any orbs and depositing them on any runes, the map will probably foul itself up and mislead you a little.  Sorry..
+1. Enter the Endless Halls and open the addon window
+2. Walk around normally — the addon tracks your position and builds the map as you move
+3. When you discover a rune or orb, click the matching colored button in the **Points of Interest** panel
+4. Use the **Navigation Target** buttons to get step-by-step directions to any POI or unexplored area
+5. If you get teleported by the trap room, click **"I just got ported!"** immediately
+6. Open the **Grid Map** at any time for a bird's-eye view of your progress
 
-If someone's up to speed on their graph theory and has a good way to deal with the trap properly, post about it on the "Issues"
-section on https://github.com/Debuggernaut/LucidNightmareNavigator/issues and I'll implement it when I get a chance
+## Credits
+
+This addon is a fork and significant enhancement of [LucidNightmareNavigator](https://github.com/Debuggernaut/LucidNightmareNavigator) by **Wonderpants of Thrall** (Bernycinders-Thrall, USA), which was itself loosely based on the original **LNH** by **Vildiesel** (EU - Well of Eternity) and further developed by contributors including **Saregon** and **Ray**.
+
+The Endless Halls map visualization was inspired by the web tool at [nightswimmer.github.io/EndlessHalls](https://nightswimmer.github.io/EndlessHalls).
+
+### Enhancements in this fork
+
+- 8×8 grid map with live room layout, wall indicators, and colored POI markers
+- Grid map auto-refreshes when a new orb or rune is marked
+- Teleport trap detection and persistent orange marking
+- Map saved to `SavedVariablesPerCharacter` and reloaded on login
+- Colored POI navigation buttons with found/unfound state
+- WoW 12.x (The War Within) compatibility
+
+## Issues & Contributions
+
+Bug reports and pull requests are welcome. Please open an issue on the project repository.
