@@ -13,7 +13,7 @@ A World of Warcraft addon that helps you navigate the **Endless Halls** maze req
 
 ## How to Use
 
-1. Enter the Endless Halls and open the addon window
+1. Enter the Endless Halls and open the addon with any of these commands: `/lnn`, `/ln`, or `/lucid`
 2. Walk around normally — the addon tracks your position and builds the map as you move
 3. When you discover a rune or orb, click the matching colored button in the **Points of Interest** panel
 4. Use the **Navigation Target** buttons to get step-by-step directions to any POI or unexplored area
