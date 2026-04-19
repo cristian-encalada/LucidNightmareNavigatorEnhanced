@@ -1,8 +1,8 @@
-## Interface: 120000, 120001
+## Interface: 120000, 120001, 120005
 ## Title: LucidNav - Lucid Nightmare Maze Navigator
 ## Author: Cristian Encalada (Byob - The Scryers - US)
 ## Notes: Real-time navigator for the Endless Halls maze (Lucid Nightmare secret mount)
-## Version: 1.0.0
+## Version: 1.0.1
 ## IconTexture: Interface\Icons\Ability_Mount_NightmareHorse
 ## X-Category: Achievements
 ## DefaultState: Enabled

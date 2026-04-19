@@ -4,7 +4,7 @@ set -e
 ADDON="LucidNav"
 TOC="${ADDON}.toc"
 
-VERSION=$(grep -i '^## Version:' "$TOC" | awk -F': ' '{print $2}')
+VERSION=$(grep -i '^## Version:' "$TOC" | awk -F': ' '{print $2}' | tr -d '\r')
 
 if [ -z "$VERSION" ]; then
   echo "Error: Version not found in $TOC"

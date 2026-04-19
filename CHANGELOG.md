@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.0.1] - 2026-04-21
+
+### Changed
+- Added WoW 12.0.5 interface version (`120005`) to TOC for compatibility with the April 21 patch
+
+---
+
 ## [1.0.0] - 2026-03-13
 
 ### Initial Release — LucidNav
